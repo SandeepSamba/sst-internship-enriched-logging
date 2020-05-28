@@ -1,0 +1,11 @@
+D:\.net\nlogexampe\nlogexampe\bin\Debug\NLog.config
+D:\.net\nlogexampe\nlogexampe\bin\Debug\nlogexampe.exe.config
+D:\.net\nlogexampe\nlogexampe\bin\Debug\nlogexampe.exe
+D:\.net\nlogexampe\nlogexampe\bin\Debug\nlogexampe.pdb
+D:\.net\nlogexampe\nlogexampe\bin\Debug\NLog.dll
+D:\.net\nlogexampe\nlogexampe\bin\Debug\NLog.xml
+D:\.net\nlogexampe\nlogexampe\obj\Debug\Sample_.NET.csprojAssemblyReference.cache
+D:\.net\nlogexampe\nlogexampe\obj\Debug\Sample_.NET.csproj.CoreCompileInputs.cache
+D:\.net\nlogexampe\nlogexampe\obj\Debug\Sample_.NET.csproj.CopyComplete
+D:\.net\nlogexampe\nlogexampe\obj\Debug\nlogexampe.exe
+D:\.net\nlogexampe\nlogexampe\obj\Debug\nlogexampe.pdb

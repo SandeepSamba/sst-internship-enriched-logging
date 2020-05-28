@@ -1,0 +1,6 @@
+12:38:27|Trace|Program.Main => Program.LogSample|Trace: This is a sample TraceLog
+12:38:27|Debug|Program.Main => Program.LogSample|Debug: This is a sample DebugLog
+12:38:27|Info|Program.Main => Program.LogSample|Info: This is a sample Info Log
+12:38:27|Warn|Program.Main => Program.LogSample|Warn: This is a sample Warn Log
+12:38:27|Error|Program.Main => Program.LogSample|Error: This is a sample Error Log
+12:38:27|Fatal|Program.Main => Program.LogSample|Fatal: This is a sample Fatal Error Log
