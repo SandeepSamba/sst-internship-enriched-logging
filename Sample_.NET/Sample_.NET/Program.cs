@@ -27,9 +27,9 @@ namespace nlogexampe
 
         static void TestImplementation()
         {
-            LogMessage nLogMessage = new LogMessage(DateTime.Now.ToString(),"My Class Name", "My Method Name", "My Calling Class Name",null,null);
+            LogMessage nLogMessage = new LogMessage(DateTime.Now.ToString(),"My Test Class Name", "My Test Method Name", "My Test Calling Class Name",null,null);
             LogMessageDecorator nLogMessageDecorator = new LogMessageDecorator(nLogMessage);
-            Console.WriteLine("attributes : {0}", nLogMessageDecorator.Attributes);
+            Console.WriteLine("Class Name : {0}", nLogMessageDecorator.ClassName);
         }
 
         static void LogSample()
@@ -114,7 +114,7 @@ namespace logWriter
         }
         public void SetMessage()
         {
-            //TODO : Logic to set the message to the class
+            //TODO : Logic to set the message to the object
             Console.WriteLine("setting message");
         }
     }
