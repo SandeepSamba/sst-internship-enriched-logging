@@ -8,13 +8,15 @@ using logWriter;
 using MethodDecorator.Fody.Interfaces;
 using NLog;
 using NLog.Fluent;
+using System.Text.Json;
+
 
 namespace nlogexampe
 {
     public class Program
     {
-        private static readonly Logger Mysameplelogger =
-         LogManager.GetCurrentClassLogger();
+        /*private static readonly Logger Mysameplelogger =
+         LogManager.GetCurrentClassLogger();*/
 
         [Rca]
         private static void Main(string[] args)
@@ -24,8 +26,8 @@ namespace nlogexampe
                 throw new ArgumentNullException(nameof(args));
             }
 
-            LogSample();
-            Console.WriteLine(TestImplementation(1,2));
+            LogSample("Route","Cause","Analysis");
+            TestImplementation(1,2);
         }
         [Rca]
         public static int TestImplementation(int a, int b)
@@ -37,10 +39,10 @@ namespace nlogexampe
         }
 
         [Rca]
-        private static void LogSample()
+        private static string LogSample(string a, string b, string c)
         {
 
-            Mysameplelogger.Info("ss");
+            return a + b + c;
 
 
         }
@@ -51,20 +53,29 @@ namespace nlogexampe
     public class RcaAttribute : Attribute, IMethodDecorator
     {
         public string methodName;
+        public string jsonMessage;
         public LogMessage messageData;
+        public LogMessageDecorator decoratedMessage;
         public void Init(object instance, MethodBase method, object[] args)
         {
             //Console.WriteLine(string.Format("Init: {0} [{1}]", method.DeclaringType.FullName + "." + method.Name, args.Length));
             this.methodName = method.Name;
 
             messageData = new LogMessage(DateTime.Now.ToString(), method.DeclaringType.FullName, method.Name, method.ReflectedType.Name,args);
-            
+            decoratedMessage = new LogMessageDecorator(messageData);
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+            };
+            jsonMessage = JsonSerializer.Serialize(decoratedMessage,options);
+
+
         }
 
         public void OnEntry()
         {
-            Console.WriteLine("Entering Method {0} \n Details",methodName);
-            Console.WriteLine("Time Stamp: {0} ",messageData.TimeStamp.ToString());
+            //Console.WriteLine("Entering Method {0}",methodName);
+            /*Console.WriteLine("Time Stamp: {0} ",messageData.TimeStamp.ToString());
             Console.WriteLine("Class Name: {0} ",messageData.ClassName);
             Console.WriteLine("Method Name: {0} ", messageData.MethodName);
             Console.WriteLine("Calling Class Name: {0} ",messageData.CallingClassName);
@@ -73,7 +84,7 @@ namespace nlogexampe
             {
                 Console.WriteLine("\t{0} ", p.ToString());
             }
-            Console.WriteLine("\n");
+            Console.WriteLine("\n");*/
 
         }
 
@@ -84,7 +95,8 @@ namespace nlogexampe
 
         public void OnExit()
         {
-            Console.WriteLine("Exiting Method {0} ", methodName);
+            //Console.WriteLine("Exiting Method {0} ", methodName);
+            decoratedMessage.AppendToFile(jsonMessage);
             Console.WriteLine("\n");
         }
     }
@@ -150,18 +162,19 @@ namespace logWriter
     public class LogMessageDecorator : LogDecorator
     {
         public LogMessageDecorator(ILogger nlogger) : base(nlogger) { }
+        private static readonly Logger Mysameplelogger =
+         LogManager.GetCurrentClassLogger();
 
-        public void GetMessage()
+        public void AppendToFile(string message)
         {
             //TODO : Logic to get message from the code
-            Console.WriteLine("Inside get message");
+            Console.WriteLine("Appending log message to file");
+            /* Mysameplelogger.Info(message);*/
+            Console.WriteLine(message);
+
            
         }
-        public void SetMessage()
-        {
-            //TODO : Logic to set the message to the object
-            Console.WriteLine("setting message");
-        }
+        
     }
 
 }
