@@ -1,0 +1,269 @@
+[
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736181464,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736181,
+    "nanoOfSecond" : 468000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736215660,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736215,
+    "nanoOfSecond" : 668000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736228801,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736228,
+    "nanoOfSecond" : 805000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736249465,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736249,
+    "nanoOfSecond" : 469000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736260862,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736260,
+    "nanoOfSecond" : 867000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736290241,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736290,
+    "nanoOfSecond" : 247000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590736331174,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590736331,
+    "nanoOfSecond" : 180000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590746971722,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590746971,
+    "nanoOfSecond" : 726000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590760882817,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590760882,
+    "nanoOfSecond" : 821000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+
+]
+
+]
+
+]
+
+]
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "loggg"
+  },
+  "message" : {
+    "timeStamp" : 1590761276244,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590761276,
+    "nanoOfSecond" : 248000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
+
+]
+
+]
+
+]
+
+]
+
+]
+
+]
+
+]
+
+]
+{
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "logWriterTest.testClass",
+  "marker" : {
+    "name" : "logging"
+  },
+  "message" : {
+    "timeStamp" : 1590761607063,
+    "className" : "Maybe you put a message here"
+  },
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "instant" : {
+    "epochSecond" : 1590761607,
+    "nanoOfSecond" : 67000000
+  },
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+
+]
