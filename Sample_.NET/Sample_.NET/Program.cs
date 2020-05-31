@@ -29,7 +29,7 @@ namespace nlogexampe
             LogSample("Route","Cause","Analysis");
             TestImplementation(1,2);
         }
-        [Rca]
+        [Rca(Level ="Debug")]
         public static int TestImplementation(int a, int b)
         {
             /*LogMessage nLogMessage = new LogMessage(DateTime.Now.ToString(),"My Test Class Name", "My Test Method Name", "My Test Calling Class Name",null,null);
@@ -48,20 +48,33 @@ namespace nlogexampe
         }
 
     }
-    
+
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor | AttributeTargets.Assembly | AttributeTargets.Module)]
     public class RcaAttribute : Attribute, IMethodDecorator
     {
-        public string methodName;
         public string jsonMessage;
         public LogMessage messageData;
         public LogMessageDecorator decoratedMessage;
+        public string LogLevel = "INFO";
+
+        public string Level
+        {
+            get
+            {
+                return LogLevel;
+            }
+            set
+            {
+                LogLevel = value.ToUpper();
+            }
+        }
+
+        
+
         public void Init(object instance, MethodBase method, object[] args)
         {
             //Console.WriteLine(string.Format("Init: {0} [{1}]", method.DeclaringType.FullName + "." + method.Name, args.Length));
-            this.methodName = method.Name;
-
-            messageData = new LogMessage(DateTime.Now.ToString(), method.DeclaringType.FullName, method.Name, method.ReflectedType.Name,args);
+            messageData = new LogMessage(Level,DateTime.Now.ToString(), method.DeclaringType.FullName, method.Name, method.ReflectedType.Name,args);
             decoratedMessage = new LogMessageDecorator(messageData);
             var options = new JsonSerializerOptions
             {
@@ -107,6 +120,7 @@ namespace logWriter
 {
     public interface ILogger
     {
+        string LogLevel{ get;}
         string TimeStamp { get; }
         string ClassName { get; }
         string MethodName { get; }
@@ -115,6 +129,7 @@ namespace logWriter
     }
     public class LogMessage : ILogger
     {
+        public string LogLevel { get; set; }
         public string TimeStamp { get; set; }
         public string ClassName { get; set; }
         public string MethodName { get; set; }
@@ -127,9 +142,10 @@ namespace logWriter
 
         }
 
-        public LogMessage(string timeStamp, string className, string methodName,
+        public LogMessage(string logLevel,string timeStamp, string className, string methodName,
             string callingClassName, object[] attributes)
         {
+            this.LogLevel = logLevel;
             this.TimeStamp = timeStamp;
             this.ClassName = className;
             this.MethodName = methodName;
@@ -146,7 +162,7 @@ namespace logWriter
         {
             _logger = nlogger;
         }
-
+        public string LogLevel => _logger.LogLevel;
         public string TimeStamp => _logger.TimeStamp;
 
         public string ClassName => _logger.ClassName;
@@ -168,7 +184,7 @@ namespace logWriter
         public void AppendToFile(string message)
         {
             //TODO : Logic to get message from the code
-            Console.WriteLine("Appending log message to file");
+            //Console.WriteLine("Appending log message to file");
             /* Mysameplelogger.Info(message);*/
             Console.WriteLine(message);
 
