@@ -64,14 +64,14 @@ namespace nlogexampe
         public void OnEntry()
         {
             Console.WriteLine("Entering Method {0} \n Details",methodName);
-            Console.WriteLine(messageData.TimeStamp);
-            Console.WriteLine(messageData.ClassName);
-            Console.WriteLine(messageData.MethodName);
-            Console.WriteLine(messageData.CallingClassName);
-            Console.WriteLine("Parameters");
+            Console.WriteLine("Time Stamp: {0} ",messageData.TimeStamp.ToString());
+            Console.WriteLine("Class Name: {0} ",messageData.ClassName);
+            Console.WriteLine("Method Name: {0} ", messageData.MethodName);
+            Console.WriteLine("Calling Class Name: {0} ",messageData.CallingClassName);
+            Console.WriteLine("Parameters List: ");
             foreach (object p in messageData.Attributes)
             {
-                Console.WriteLine(p.ToString());
+                Console.WriteLine("\t{0} ", p.ToString());
             }
             Console.WriteLine("\n");
 
