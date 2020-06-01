@@ -1,8 +1,8 @@
 
 
 public class attributeclass {
-	String attribute;
-	public attributeclass(String att) {
+	Object attribute;
+	public attributeclass(Object att) {
 	     this.attribute = att;
 		
 	}

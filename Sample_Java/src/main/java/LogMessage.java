@@ -6,20 +6,20 @@ public class LogMessage implements logger{
 		String ClassName = "";
 		String MethodName = "";
 		String CallingClassName="";
-		ArrayList<String> Attributes = new ArrayList<String>();
+		ArrayList<Object> Attributes = new ArrayList<Object>();
 		ArrayList<String> Attributetype = new ArrayList<String>();
 
 		public LogMessage() {
 			// TODO Auto-generated constructor stub
 		}
-		public LogMessage(String timestamp,String classname,String methodname,String callingclassname,ArrayList<String> attributes,ArrayList<String> attributetype) {
+		public LogMessage(String timestamp,String classname,String methodname,String callingclassname,ArrayList<Object> attributes,ArrayList<String> attributetype) {
 			this.TimeStamp=timestamp;
 			this.ClassName=classname;
 			this.MethodName=methodname;
 			this.CallingClassName=callingclassname;
 			this.Attributes=attributes;
 			this.Attributetype=attributetype;
-			//System.out.println(TimeStamp);
+			
 			
 		}
 		public String timestamp() {
@@ -39,7 +39,7 @@ public class LogMessage implements logger{
 			return CallingClassName;
 			
 		}
-		public ArrayList<String> attributes() {
+		public ArrayList<Object> attributes() {
 			return Attributes;
 			
 		}
