@@ -15,9 +15,6 @@ namespace nlogexampe
 {
     public class Program
     {
-        /*private static readonly Logger Mysameplelogger =
-         LogManager.GetCurrentClassLogger();*/
-
         [Rca]
         private static void Main(string[] args)
         {
@@ -32,9 +29,6 @@ namespace nlogexampe
         [Rca(Level ="Debug")]
         public static int TestImplementation(int a, int b)
         {
-            /*LogMessage nLogMessage = new LogMessage(DateTime.Now.ToString(),"My Test Class Name", "My Test Method Name", "My Test Calling Class Name",null,null);
-            LogMessageDecorator nLogMessageDecorator = new LogMessageDecorator(nLogMessage);
-            Console.WriteLine("Class Name : {0}", nLogMessageDecorator.ClassName);*/
             return a + b;
         }
 
@@ -49,7 +43,12 @@ namespace nlogexampe
 
     }
 
-    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor | AttributeTargets.Assembly | AttributeTargets.Module)]
+}
+
+namespace logWriter
+{
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor
+        | AttributeTargets.Assembly | AttributeTargets.Module)]
     public class RcaAttribute : Attribute, IMethodDecorator
     {
         public string jsonMessage;
@@ -69,35 +68,24 @@ namespace nlogexampe
             }
         }
 
-        
+
 
         public void Init(object instance, MethodBase method, object[] args)
         {
-            //Console.WriteLine(string.Format("Init: {0} [{1}]", method.DeclaringType.FullName + "." + method.Name, args.Length));
-            messageData = new LogMessage(Level,DateTime.Now.ToString(), method.DeclaringType.FullName, method.Name, method.ReflectedType.Name,args);
+            messageData = new LogMessage(Level, DateTime.Now.ToString(), method.DeclaringType.FullName,
+                method.Name, method.ReflectedType.Name, args);
             decoratedMessage = new LogMessageDecorator(messageData);
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true,
             };
-            jsonMessage = JsonSerializer.Serialize(decoratedMessage,options);
+            jsonMessage = JsonSerializer.Serialize(decoratedMessage, options);
 
 
         }
 
         public void OnEntry()
         {
-            //Console.WriteLine("Entering Method {0}",methodName);
-            /*Console.WriteLine("Time Stamp: {0} ",messageData.TimeStamp.ToString());
-            Console.WriteLine("Class Name: {0} ",messageData.ClassName);
-            Console.WriteLine("Method Name: {0} ", messageData.MethodName);
-            Console.WriteLine("Calling Class Name: {0} ",messageData.CallingClassName);
-            Console.WriteLine("Parameters List: ");
-            foreach (object p in messageData.Attributes)
-            {
-                Console.WriteLine("\t{0} ", p.ToString());
-            }
-            Console.WriteLine("\n");*/
 
         }
 
@@ -108,16 +96,9 @@ namespace nlogexampe
 
         public void OnExit()
         {
-            //Console.WriteLine("Exiting Method {0} ", methodName);
             decoratedMessage.AppendToFile(jsonMessage);
-            Console.WriteLine("\n");
         }
     }
-
-}
-
-namespace logWriter
-{
     public interface ILogger
     {
         string LogLevel{ get;}
@@ -183,10 +164,8 @@ namespace logWriter
 
         public void AppendToFile(string message)
         {
-            //TODO : Logic to get message from the code
-            //Console.WriteLine("Appending log message to file");
-            /* Mysameplelogger.Info(message);*/
-            Console.WriteLine(message);
+            //TODO : FILE APPENDING AFTER ENRICHING
+            Console.WriteLine(message+"\n");
 
            
         }
