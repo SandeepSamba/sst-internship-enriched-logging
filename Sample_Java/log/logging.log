@@ -1,0 +1,3 @@
+2020-06-01 INFO  [main] -{"timestamp":"1590999824","classname":"My Test Class Name","methodname":"My Test Method Name","callingclassname":"My Test Calling Class Name","temp":[]}
+2020-06-01 INFO  [main] -{"timestamp":"1591002907","classname":"My Test Class Name","methodname":"My Test Method Name","callingclassname":"My Test Calling Class Name","temp":[]}
+2020-06-01 INFO  [main] -{"timestamp":"1591003175","classname":"My Test Class Name","methodname":"My Test Method Name","callingclassname":"My Test Calling Class Name","temp":[]}
