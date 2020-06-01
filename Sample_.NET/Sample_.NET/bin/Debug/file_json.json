@@ -1,3 +1,3 @@
-{ "time": "2020-05-28 12:54:20.8972", "level": "INFO", "message": "ss" }
-{ "time": "2020-05-28 14:15:13.0830", "level": "INFO", "message": "ss" }
-{ "time": "2020-05-28 14:17:18.8454", "level": "INFO", "message": "ss" }
+{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:59\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"LogSample\",\"CallingClassName\":\"Program\",\"Attributes\":[\"Route\",\"Cause\",\"Analysis\"]}" }
+{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:59\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"TestImplementation\",\"CallingClassName\":\"Program\",\"Attributes\":[1,2]}" }
+{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:58\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"Main\",\"CallingClassName\":\"Program\",\"Attributes\":[[]]}" }
