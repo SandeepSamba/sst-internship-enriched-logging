@@ -23,7 +23,7 @@ public class LogMessageDecorator extends LogDecorator {
 		return CallingClassName;
 		
 	}
-	public ArrayList<String> attributes() {
+	public ArrayList<Object> attributes() {
 		return Attributes;
 		
 	}
