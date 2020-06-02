@@ -25,11 +25,12 @@ public class ExampleAspect {
 		String classname = "" + joinPoint.getSignature().getDeclaringType(); 
 		String method = "" +  joinPoint.getSignature().getName();
         LogMessage logmessage = new LogMessage(sec,classname,method, "Calling Class Name",Attributes,Attributetype) ;
-      
+        int temp = logmessage.attributes().size();
+
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),
                 logmessage.methodname(),logmessage.callingclassname(),
-                logmessage.attributes(),logmessage.attributetypes());
+                logmessage.attributes(),logmessage.attributetypes(),temp);
         System.out.println("----Appending Log details to file----");
         logger.info(log);
         
