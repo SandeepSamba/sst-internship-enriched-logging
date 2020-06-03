@@ -25,7 +25,6 @@ public class ExampleAspect {
 		ArrayList<String> Attributetype = new ArrayList<String>();
 		String classname = "" + joinPoint.getSignature().getDeclaringType(); 
 		String method = "" +  joinPoint.getSignature().getName();
-
 		
 		
 //		String callclassName = ((Throwable) joinPoint).getStackTrace()[0].getClassName();
@@ -36,7 +35,6 @@ public class ExampleAspect {
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),
                 logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp);
-
         System.out.println("----Appending Log details to file----");
         logger.info(log);
         
