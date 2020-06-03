@@ -1,0 +1,4 @@
+2020-06-01 INFO  [main] -{"timestamp":"34","classname":"class Cal","methodname":"add","callingclassname":"Calling Class Name","temp":[]}
+2020-06-01 INFO  [main] -{"timestamp":"0","classname":"class Cal","methodname":"div","callingclassname":"Calling Class Name","temp":[]}
+2020-06-01 INFO  [main] -{"timestamp":"23","classname":"class Cal","methodname":"add","callingclassname":"Calling Class Name","temp":[]}
+2020-06-01 INFO  [main] -{"timestamp":"0","classname":"class Cal","methodname":"div","callingclassname":"Calling Class Name","temp":[]}
