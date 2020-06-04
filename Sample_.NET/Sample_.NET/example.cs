@@ -3,6 +3,9 @@ using logWriter;
 
 namespace nlogexampe
 {
+    /*
+     * This file is to be used just for demo purposes
+     */
     public class Employee
     {
         private string Name;
@@ -20,6 +23,7 @@ namespace nlogexampe
         [Rca(Level = LogLevel.Debug)]
         public void DisplayEmp()
         {
+
             //Displaying Employee details
         }
     }
