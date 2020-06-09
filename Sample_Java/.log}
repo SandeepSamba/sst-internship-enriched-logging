@@ -1,0 +1,8 @@
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640847901","classname":"class Cal","methodname":"add","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640847972","classname":"class Cal","methodname":"div","callingclassname":"main","attributes":[1764874588,244937],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640847975","classname":"class Cal","methodname":"sub","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640847978","classname":"class Cal","methodname":"mod","callingclassname":"main","attributes":[746582019,2657],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640902056","classname":"class Cal","methodname":"add","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640902121","classname":"class Cal","methodname":"div","callingclassname":"main","attributes":[1764874588,244937],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640902123","classname":"class Cal","methodname":"sub","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
+2020-06-08-22 INFO  [main] -{"timestamp":"1591640902124","classname":"class Cal","methodname":"mod","callingclassname":"main","attributes":[746582019,2657],"attributetype":["int","int"]}

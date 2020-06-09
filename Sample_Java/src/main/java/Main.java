@@ -10,8 +10,9 @@ public class Main {
 		
 
 		 @SuppressWarnings("resource")
+		 //Loads the definition of beans from Aspectexample.xml file
 		ApplicationContext context = new ClassPathXmlApplicationContext("Aspectexample.xml");
-			
+		 //Retrieving the required bean
 			Cal cal = (Cal) context.getBean("cal");
 			cal.add(1016789, 1675);
 			try {

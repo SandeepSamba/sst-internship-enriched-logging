@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-
+//decorator pattern concrete class
 public class LogMessage implements logger{
 		String TimeStamp = "";
 		String ClassName = "";
 		String MethodName = "";
 		String CallingClassName="";
 		ArrayList<Object> Attributes = new ArrayList<Object>();
-		ArrayList<String> Attributetype = new ArrayList<String>();
+		ArrayList<Object> Attributetype = new ArrayList<Object>();
 
 		public LogMessage() {
 			// TODO Auto-generated constructor stub
 		}
-		public LogMessage(String timestamp,String classname,String methodname,String callingclassname,ArrayList<Object> attributes,ArrayList<String> attributetype) {
+		public LogMessage(String timestamp,String classname,String methodname,String callingclassname,ArrayList<Object> attributes,ArrayList<Object> attributetype) {
 			this.TimeStamp=timestamp;
 			this.ClassName=classname;
 			this.MethodName=methodname;
@@ -43,7 +43,7 @@ public class LogMessage implements logger{
 			return Attributes;
 			
 		}
-		public  ArrayList<String> attributetypes() {
+		public  ArrayList<Object> attributetypes() {
 			return Attributetype ;
 			
 		}
