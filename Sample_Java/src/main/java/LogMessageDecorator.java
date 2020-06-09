@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//decorator pattern concrete decorator
 public class LogMessageDecorator extends LogDecorator {
 	public LogMessageDecorator(logger logger1) {
 		// TODO Auto-generated constructor stub

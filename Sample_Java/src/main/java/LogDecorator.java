@@ -1,5 +1,4 @@
-//import java.util.ArrayList;
-
+//decorator pattern abstract class
 public abstract class LogDecorator implements logger{
 	public LogDecorator() {
 		// TODO Auto-generated constructor stub

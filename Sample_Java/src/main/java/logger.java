@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//decorator pattern interface declaring logger fields
 public interface logger {
 	public String TimeStamp = "";
 	public String ClassName = "";
