@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NLog;
+using NLog.Fluent;
+using System;
 using System.Collections.Generic;
 using System.Text.Json;
 
@@ -35,19 +37,31 @@ namespace logWriter
         public void LogException(Exception exception)
         {
 
-            Exceptions.Add(exception.Message);
+            Exceptions.Add(exception.ToString());
             
         }
 
         // method to serialize the log message and append the message to file
         public void AppendToFile(LogMessage message)
         {
+            FileConfig.UpdateConfig();
+
+            LogManager.ConfigurationReloaded += (sender, e) =>
+            {
+                //Re apply if config reloaded
+                FileConfig.UpdateConfig();
+            };
+
+
+            Logger logger = LogManager.GetCurrentClassLogger();
             // option to customize the indentation of the json nessage object
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true,
             };
-           Console.WriteLine(JsonSerializer.Serialize(message, options));
+            Console.WriteLine(JsonSerializer.Serialize(message, options));
+            logger.Info(JsonSerializer.Serialize(message));
+
         }
 
     }    
