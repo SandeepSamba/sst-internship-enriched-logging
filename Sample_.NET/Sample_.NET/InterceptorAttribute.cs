@@ -45,7 +45,7 @@ namespace logWriter
         public void Init(object instance, MethodBase method, object[] args)
         {
             //Logic to collect the instance of the target and retrieve the messsage to be logged
-            messageData = new LogMessage(Level, DateTime.Now.ToString(), method.DeclaringType.FullName,
+            messageData = new LogMessage(Level, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:ffff"), method.DeclaringType.FullName,
                 method.Name, method.ReflectedType.Name, args);
 
         }
@@ -54,7 +54,7 @@ namespace logWriter
         public void OnEntry()
         {
             //Logic to do the activities when the target is entered
-
+            //messageData.AppendToFile(messageData);
         }
 
         // OnException - Triggered when an exception occures in the target

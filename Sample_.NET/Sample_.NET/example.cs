@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.Remoting;
+using System.Threading;
 using logWriter;
 
 namespace nlogexampe
@@ -23,7 +25,6 @@ namespace nlogexampe
         [Rca(Level = LogLevel.Debug)]
         public void DisplayEmp()
         {
-
             //Displaying Employee details
         }
     }
@@ -47,6 +48,14 @@ namespace nlogexampe
     }
     public class Program
     {
+        [Rca]
+        public static void ShowException()
+        {
+            //Console.WriteLine("Calling from thread");
+            int a = 0, b = 1;
+            int res = b / a;
+        }
+
         [Rca(Level = LogLevel.Fatal)]
         public static int TestImplementation(int a, int b)
         {
@@ -69,6 +78,13 @@ namespace nlogexampe
             }
             LogSample("Route", "Cause", "Analysis");
             TestImplementation(1, 2);
+
+
+            Thread thread = new Thread(Program.ShowException);
+            thread.Start();
+
+            Thread thread2 = new Thread(Program.ShowException);
+            thread2.Start();
 
             Calculator calc = new Calculator();
             calc.Add(10, 20);
