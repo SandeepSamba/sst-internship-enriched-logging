@@ -85,6 +85,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fileConfig.cs" />
+    <Compile Include="example.cs" />
+    <Compile Include="InterceptorAttribute.cs" />
+    <Compile Include="LogLevelEnums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
