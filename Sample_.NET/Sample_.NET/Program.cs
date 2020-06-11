@@ -44,6 +44,7 @@ namespace logWriter
         // method to serialize the log message and append the message to file
         public void AppendToFile(LogMessage message)
         {
+            //Update the file confiuration at ever write
             FileConfig.UpdateConfig();
 
             LogManager.ConfigurationReloaded += (sender, e) =>
@@ -60,7 +61,7 @@ namespace logWriter
                 WriteIndented = true,
             };
             Console.WriteLine(JsonSerializer.Serialize(message, options));
-            logger.Info(JsonSerializer.Serialize(message));
+            logger.Info(JsonSerializer.Serialize(message,options));
 
         }
 
