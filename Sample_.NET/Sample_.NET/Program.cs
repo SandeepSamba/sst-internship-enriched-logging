@@ -18,11 +18,12 @@ namespace logWriter
         public string MethodName { get; set; }
         public string CallingClassName { get; set; }
         public object[] Attributes { get; set; }
+        public List<String> AttributeType { get; set; }
         public List<String> Exceptions { get; set; }
 
         // Constructor to be use while instantiation this class with the message 
         public LogMessage(LogLevel logLevel,string timeStamp, string className, string methodName,
-            string callingClassName, object[] attributes)
+            string callingClassName, object[] attributes, List<String> attributeType)
         {
             this.LogLvl = logLevel;
             this.TimeStamp = timeStamp;
@@ -30,6 +31,7 @@ namespace logWriter
             this.MethodName = methodName;
             this.CallingClassName = callingClassName;
             this.Attributes = attributes;
+            this.AttributeType = attributeType;
             this.Exceptions = new List<String>();
         }
 
@@ -61,7 +63,7 @@ namespace logWriter
                 WriteIndented = true,
             };
             Console.WriteLine(JsonSerializer.Serialize(message, options));
-            logger.Info(JsonSerializer.Serialize(message,options));
+            //logger.Info(JsonSerializer.Serialize(message,options));
 
         }
 
