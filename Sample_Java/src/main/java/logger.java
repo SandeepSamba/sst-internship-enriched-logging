@@ -7,5 +7,6 @@ public interface logger {
 	public String CallingClassName="";
 	public ArrayList<Object> Attributes = new ArrayList<Object>();
 	public ArrayList<String> Attributetype = new ArrayList<String>();
+	public Exception e=null;
 
 }
