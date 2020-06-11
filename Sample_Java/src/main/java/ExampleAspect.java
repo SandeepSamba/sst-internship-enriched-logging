@@ -11,7 +11,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 Joint point - Method ExampleAspect() is executed when the pointcut is met
 Logger - A logger with class name Main is created
 The retrieved details are further assigned to a Jsonconv object
-The information is then logged in JSON format to a file for INFO level log*/
+The information is then logged in JSON format to a file for INFO level logs*/
 @Aspect
 public class ExampleAspect {
 	@Before("execution(* *(..))")
