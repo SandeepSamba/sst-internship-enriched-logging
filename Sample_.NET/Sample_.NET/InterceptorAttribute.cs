@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using MethodDecorator.Fody.Interfaces;
 
@@ -26,6 +27,7 @@ namespace logWriter
     {
         public LogMessage messageData;
         public LogLevel level = LogLevel.Info;
+        public List<String> argTypes = new List<String>();
 
         // Logic to oerride the default log level if specified by the user
         public LogLevel Level
@@ -45,9 +47,13 @@ namespace logWriter
         public void Init(object instance, MethodBase method, object[] args)
         {
             //Logic to collect the instance of the target and retrieve the messsage to be logged
+            foreach (Object o in args)
+            {
+                argTypes.Add(o.GetType().ToString());
+            }
             messageData = new LogMessage(Level, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:ffff"), method.DeclaringType.FullName,
-                method.Name, method.ReflectedType.Name, args);
-
+                method.Name, method.ReflectedType.Name, args, argTypes);
+            
         }
 
         // OnEntry - Triggered when the target is entered
