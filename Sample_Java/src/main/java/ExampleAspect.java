@@ -70,7 +70,7 @@ public class ExampleAspect {
 	        Jsonconvert jsonconv = new Jsonconvert();
 	        String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
 			logger.info(log);
-			System.out.println(log);
+		    //System.out.println(log);
 
 	    	System.out.println("Exception e is <" + e + ">");
 			

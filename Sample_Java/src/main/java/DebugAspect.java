@@ -51,7 +51,7 @@ public class DebugAspect {
 	    int temp=logmessage.Attributes.size();
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
-        System.out.println(log);
+        
         logger.debug(log);		
         return proceed;
 
@@ -81,8 +81,7 @@ public class DebugAspect {
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
 		logger.debug(log);
-		System.out.println(log);
-
+		
     	System.out.println("Exception e is <" + e + ">");
 		
     	

@@ -10,8 +10,9 @@ import org.aspectj.lang.annotation.Aspect;
 
 
 import java.lang.reflect.Method;
+import java.sql.Timestamp;
 //import java.util.ArrayList;
-
+import java.time.Instant;
 
 import org.aspectj.lang.JoinPoint;
 //import org.aspectj.lang.ProceedingJoinPoint;
@@ -44,14 +45,16 @@ public class ErrorAspect {
 	    String callingclass = Thread.currentThread().getName();
 	    String classname = "" + joinPoint.getSignature().getDeclaringType(); 
 		String methodname=joinPoint.getSignature().getName();
-		String sec=""+System.currentTimeMillis();
+		Timestamp instant= Timestamp.from(Instant.now());
+		String sec=""+instant;
+		
         Exception e = null;
 
 	    LogMessage logmessage = new LogMessage(sec,classname,methodname,callingclass,Attributes,types,e) ;
 	    int temp=logmessage.Attributes.size();
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
-        //System.out.println(log);
+        
         logger.error(log);		
         return proceed;
 
@@ -81,8 +84,7 @@ public class ErrorAspect {
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
 		logger.error(log);
-		//System.out.println(log);
-
+		
     	System.out.println("Exception e is <" + e + ">");
 		
     	

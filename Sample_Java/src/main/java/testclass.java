@@ -3,7 +3,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 
-/* The class tests the concrete class LogMessage with junit testing framework.LogMessage class 
+/* This class tests the concrete class LogMessage with junit testing framework.LogMessage class 
  * is instantiated with various objects and is tested with several test cases.
   */
 
@@ -40,7 +40,7 @@ public class testclass {
 	   System.out.println("Test case 3 running");
 	      assertEquals("72363",logmessage2.timestamp());
 	      assertEquals("Cal",logmessage2.classname());
-	      assertEquals("ad",logmessage2.methodname());
+	      assertEquals("add",logmessage2.methodname());
 	      assertEquals("main",logmessage2.callingclassname());
 	      
 	   }

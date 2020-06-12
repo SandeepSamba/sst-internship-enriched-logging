@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import com.google.gson.GsonBuilder;
 
 import com.google.gson.Gson;
 public class Jsonconvert {
@@ -10,7 +11,9 @@ public class Jsonconvert {
 		Jsonobject jsonobj = new Jsonobject(timestamp,classname, methodname,
 				callingclassname,attributes,attributetype,temp,e);
 		// Declaring a Gson object
-		Gson gson = new Gson();
+		Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create(); ;
 		// Converting the details to JSON format
 		String Json = gson.toJson(jsonobj);  
 		
