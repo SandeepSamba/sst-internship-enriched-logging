@@ -1,8 +1,280 @@
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640847901","classname":"class Cal","methodname":"add","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640847972","classname":"class Cal","methodname":"div","callingclassname":"main","attributes":[1764874588,244937],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640847975","classname":"class Cal","methodname":"sub","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640847978","classname":"class Cal","methodname":"mod","callingclassname":"main","attributes":[746582019,2657],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640902056","classname":"class Cal","methodname":"add","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640902121","classname":"class Cal","methodname":"div","callingclassname":"main","attributes":[1764874588,244937],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640902123","classname":"class Cal","methodname":"sub","callingclassname":"main","attributes":[1016789,1675],"attributetype":["int","int"]}
-2020-06-08-22 INFO  [main] -{"timestamp":"1591640902124","classname":"class Cal","methodname":"mod","callingclassname":"main","attributes":[746582019,2657],"attributetype":["int","int"]}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880507912",
+  "classname": "class Cal",
+  "methodname": "add",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880507994",
+  "classname": "class Cal",
+  "methodname": "div",
+  "callingclassname": "main",
+  "attributes": [
+    1764874588,
+    128974
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880507996",
+  "classname": "class Cal",
+  "methodname": "sub",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880507998",
+  "classname": "class Cal",
+  "methodname": "mod",
+  "callingclassname": "main",
+  "attributes": [
+    746582019,
+    2657
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880602198",
+  "classname": "class Cal",
+  "methodname": "add",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880602271",
+  "classname": "class Cal",
+  "methodname": "div",
+  "callingclassname": "main",
+  "attributes": [
+    1764874588,
+    128974
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880602273",
+  "classname": "class Cal",
+  "methodname": "sub",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 INFO  [main] -{
+  "timestamp": "1591880602275",
+  "classname": "class Cal",
+  "methodname": "mod",
+  "callingclassname": "main",
+  "attributes": [
+    746582019,
+    2657
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR [main] -{
+  "timestamp": "2020-06-11 17:04:11.203",
+  "classname": "class Cal",
+  "methodname": "add",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR [main] -{
+  "timestamp": "2020-06-11 17:04:11.27",
+  "classname": "class Cal",
+  "methodname": "div",
+  "callingclassname": "main",
+  "attributes": [
+    1764874588,
+    128974
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR [main] -{
+  "timestamp": "2020-06-11 17:04:11.272",
+  "classname": "class Cal",
+  "methodname": "sub",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR [main] -{
+  "timestamp": "2020-06-11 17:04:11.274",
+  "classname": "class Cal",
+  "methodname": "mod",
+  "callingclassname": "main",
+  "attributes": [
+    746582019,
+    2657
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR -{
+  "timestamp": "2020-06-11 17:08:23.399",
+  "classname": "class Cal",
+  "methodname": "add",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR -{
+  "timestamp": "2020-06-11 17:08:23.472",
+  "classname": "class Cal",
+  "methodname": "div",
+  "callingclassname": "main",
+  "attributes": [
+    1764874588,
+    128974
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR -{
+  "timestamp": "2020-06-11 17:08:23.474",
+  "classname": "class Cal",
+  "methodname": "sub",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+2020-06-11-17 ERROR -{
+  "timestamp": "2020-06-11 17:08:23.477",
+  "classname": "class Cal",
+  "methodname": "mod",
+  "callingclassname": "main",
+  "attributes": [
+    746582019,
+    2657
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+ERROR {
+  "timestamp": "2020-06-11 17:09:20.138",
+  "classname": "class Cal",
+  "methodname": "add",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+ERROR {
+  "timestamp": "2020-06-11 17:09:20.207",
+  "classname": "class Cal",
+  "methodname": "div",
+  "callingclassname": "main",
+  "attributes": [
+    1764874588,
+    128974
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+ERROR {
+  "timestamp": "2020-06-11 17:09:20.208",
+  "classname": "class Cal",
+  "methodname": "sub",
+  "callingclassname": "main",
+  "attributes": [
+    1016789,
+    1675
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
+ERROR {
+  "timestamp": "2020-06-11 17:09:20.21",
+  "classname": "class Cal",
+  "methodname": "mod",
+  "callingclassname": "main",
+  "attributes": [
+    746582019,
+    2657
+  ],
+  "attributetype": [
+    "int",
+    "int"
+  ]
+}
