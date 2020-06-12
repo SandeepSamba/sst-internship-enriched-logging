@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//selecting a log level	 
-		 int choose_log_func = 3;
+		 int choose_log_func = 2;
 		 ApplicationContext context = null;
 		 
 		 if(choose_log_func == 0) {
@@ -39,7 +39,7 @@ public class Main {
 			Cal cal = (Cal) context.getBean("cal");
 			cal.add(1016789, 1675);
 			try {
-				cal.div(1764874588,0);
+				cal.div(1764874588,128974);
 			} catch (Exception e) {
 				
 				e.printStackTrace();

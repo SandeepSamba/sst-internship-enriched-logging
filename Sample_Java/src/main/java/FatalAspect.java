@@ -51,7 +51,7 @@ public class FatalAspect {
 	    int temp=logmessage.Attributes.size();
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
-        System.out.println(log);
+        
         logger.fatal(log);		
         return proceed;
 
@@ -81,7 +81,7 @@ public class FatalAspect {
         Jsonconvert jsonconv = new Jsonconvert();
         String log = jsonconv.convert(logmessage.timestamp(),logmessage.classname(),logmessage.methodname(),logmessage.callingclassname(),logmessage.attributes(),logmessage.attributetypes(),temp,logmessage.exception());
 		logger.fatal(log);
-		System.out.println(log);
+		
 
     	System.out.println("Exception e is <" + e + ">");
 		
