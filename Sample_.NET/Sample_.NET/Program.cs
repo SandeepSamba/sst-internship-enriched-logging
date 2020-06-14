@@ -1,8 +1,9 @@
-﻿using NLog;
+﻿using Newtonsoft.Json;
+using NLog;
 using NLog.Fluent;
 using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.Text.Json;
 
 namespace logWriter
 {
@@ -58,12 +59,8 @@ namespace logWriter
 
             Logger logger = LogManager.GetCurrentClassLogger();
             // option to customize the indentation of the json nessage object
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true,
-            };
-            Console.WriteLine(JsonSerializer.Serialize(message, options));
-            //logger.Info(JsonSerializer.Serialize(message,options));
+            //Console.WriteLine(JsonConvert.SerializeObject(message,Formatting.Indented));
+            logger.Info(JsonSerializer.Serialize(message,options));
 
         }
 
