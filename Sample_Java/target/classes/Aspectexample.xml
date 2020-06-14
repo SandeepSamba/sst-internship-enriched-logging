@@ -5,6 +5,6 @@
     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
     <aop:aspectj-autoproxy />
-    <bean id="cal" class="Cal" />
-    <bean id="exampleAspect" class="ExampleAspect" />
+    <bean id="cal" class="main.Cal" />
+    <bean id="exampleAspect" class="logwriter.ExampleAspect" />
 </beans>
