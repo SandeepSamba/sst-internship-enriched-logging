@@ -1,6 +1,6 @@
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880507912",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:50:26.879",
+  "classname": "class main.Cal",
   "methodname": "add",
   "callingclassname": "main",
   "attributes": [
@@ -10,25 +10,32 @@
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "loglevel": "INFO"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880507994",
-  "classname": "class Cal",
+{
+  "timestamp": "1592142626951",
+  "classname": "class main.Cal",
   "methodname": "div",
   "callingclassname": "main",
   "attributes": [
     1764874588,
-    128974
+    0
   ],
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "e": {
+    "detailMessage": "Not divisble by 0",
+    "stackTrace": [],
+    "suppressedExceptions": []
+  },
+  "loglevel": "DEBUG"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880507996",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:50:26.956",
+  "classname": "class main.Cal",
   "methodname": "sub",
   "callingclassname": "main",
   "attributes": [
@@ -38,11 +45,12 @@
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "loglevel": "INFO"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880507998",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:50:26.959",
+  "classname": "class main.Cal",
   "methodname": "mod",
   "callingclassname": "main",
   "attributes": [
@@ -52,11 +60,12 @@
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "loglevel": "INFO"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880602198",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:58:21.456",
+  "classname": "class main.Cal",
   "methodname": "add",
   "callingclassname": "main",
   "attributes": [
@@ -66,25 +75,32 @@
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "loglevel": "INFO"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880602271",
-  "classname": "class Cal",
+{
+  "timestamp": "1592143101542",
+  "classname": "class main.Cal",
   "methodname": "div",
   "callingclassname": "main",
   "attributes": [
     1764874588,
-    128974
+    0
   ],
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "e": {
+    "detailMessage": "Not divisble by 0",
+    "stackTrace": [],
+    "suppressedExceptions": []
+  },
+  "loglevel": "DEBUG"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880602273",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:58:21.547",
+  "classname": "class main.Cal",
   "methodname": "sub",
   "callingclassname": "main",
   "attributes": [
@@ -94,11 +110,12 @@
   "attributetype": [
     "int",
     "int"
-  ]
+  ],
+  "loglevel": "INFO"
 }
-2020-06-11-17 INFO  [main] -{
-  "timestamp": "1591880602275",
-  "classname": "class Cal",
+{
+  "timestamp": "2020-06-14 17:58:21.549",
+  "classname": "class main.Cal",
   "methodname": "mod",
   "callingclassname": "main",
   "attributes": [
@@ -108,173 +125,6 @@
   "attributetype": [
     "int",
     "int"
-  ]
-}
-2020-06-11-17 ERROR [main] -{
-  "timestamp": "2020-06-11 17:04:11.203",
-  "classname": "class Cal",
-  "methodname": "add",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
   ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR [main] -{
-  "timestamp": "2020-06-11 17:04:11.27",
-  "classname": "class Cal",
-  "methodname": "div",
-  "callingclassname": "main",
-  "attributes": [
-    1764874588,
-    128974
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR [main] -{
-  "timestamp": "2020-06-11 17:04:11.272",
-  "classname": "class Cal",
-  "methodname": "sub",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR [main] -{
-  "timestamp": "2020-06-11 17:04:11.274",
-  "classname": "class Cal",
-  "methodname": "mod",
-  "callingclassname": "main",
-  "attributes": [
-    746582019,
-    2657
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR -{
-  "timestamp": "2020-06-11 17:08:23.399",
-  "classname": "class Cal",
-  "methodname": "add",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR -{
-  "timestamp": "2020-06-11 17:08:23.472",
-  "classname": "class Cal",
-  "methodname": "div",
-  "callingclassname": "main",
-  "attributes": [
-    1764874588,
-    128974
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR -{
-  "timestamp": "2020-06-11 17:08:23.474",
-  "classname": "class Cal",
-  "methodname": "sub",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-2020-06-11-17 ERROR -{
-  "timestamp": "2020-06-11 17:08:23.477",
-  "classname": "class Cal",
-  "methodname": "mod",
-  "callingclassname": "main",
-  "attributes": [
-    746582019,
-    2657
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-ERROR {
-  "timestamp": "2020-06-11 17:09:20.138",
-  "classname": "class Cal",
-  "methodname": "add",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-ERROR {
-  "timestamp": "2020-06-11 17:09:20.207",
-  "classname": "class Cal",
-  "methodname": "div",
-  "callingclassname": "main",
-  "attributes": [
-    1764874588,
-    128974
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-ERROR {
-  "timestamp": "2020-06-11 17:09:20.208",
-  "classname": "class Cal",
-  "methodname": "sub",
-  "callingclassname": "main",
-  "attributes": [
-    1016789,
-    1675
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
-}
-ERROR {
-  "timestamp": "2020-06-11 17:09:20.21",
-  "classname": "class Cal",
-  "methodname": "mod",
-  "callingclassname": "main",
-  "attributes": [
-    746582019,
-    2657
-  ],
-  "attributetype": [
-    "int",
-    "int"
-  ]
+  "loglevel": "INFO"
 }
