@@ -1,3 +1,0 @@
-{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:59\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"LogSample\",\"CallingClassName\":\"Program\",\"Attributes\":[\"Route\",\"Cause\",\"Analysis\"]}" }
-{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:59\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"TestImplementation\",\"CallingClassName\":\"Program\",\"Attributes\":[1,2]}" }
-{ "message": "{\"TimeStamp\":\"31-05-2020 16:54:58\",\"ClassName\":\"nlogexampe.Program\",\"MethodName\":\"Main\",\"CallingClassName\":\"Program\",\"Attributes\":[[]]}" }
