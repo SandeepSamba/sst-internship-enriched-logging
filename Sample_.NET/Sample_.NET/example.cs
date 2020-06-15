@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Remoting;
 using System.Threading;
 using logWriter;
 
@@ -81,10 +80,10 @@ namespace nlogexampe
 
 
             Thread thread = new Thread(Program.ShowException);
-            thread.Start();
+            //thread.Start();
 
             Thread thread2 = new Thread(Program.ShowException);
-            thread2.Start();
+            //thread2.Start();
 
             Calculator calc = new Calculator();
             calc.Add(10, 20);

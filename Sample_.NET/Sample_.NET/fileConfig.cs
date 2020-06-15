@@ -30,7 +30,7 @@ namespace logWriter
         public static void UpdateConfig()
         {
             //Change this interval to obtain a new file after every interval 
-            var interval = Minutely;
+            var interval = Daily;
 
             //Change the archive size to obtain a new file when the size is exceeded
             var archiveSize = MB;
