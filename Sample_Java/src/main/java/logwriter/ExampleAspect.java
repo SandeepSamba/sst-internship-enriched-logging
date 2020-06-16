@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.reflect.MethodSignature;
 
-import main.Main;
+
 /* Pointcut - Determines that every method with the annotation @Timed needs to be intercepted
 Joint point - Method ExampleAspect() is executed when the pointcut is met
 Logger - A logger with class name Main is created
@@ -23,7 +23,7 @@ public class ExampleAspect {
 	public Object logBefore(JoinPoint joinPoint) throws Throwable {
 		Object proceed = ((ProceedingJoinPoint) joinPoint).proceed();
 		System.out.println("logBefore() is running!");	 
-		Logger logger = Logger.getLogger(Main.class);
+		Logger logger = Logger.getLogger(Logger.class);
 	
 		final MethodSignature signature = (MethodSignature) joinPoint.getSignature();
 		final Method method = signature.getMethod();	
@@ -58,7 +58,7 @@ public class ExampleAspect {
 	// for exception logging//
 	 @AfterThrowing(value = "execution(* *(..))", throwing="e")
 	    public void logExceptionHandler(JoinPoint joinPoint,Exception e) throws Throwable {
-			Logger logger = Logger.getLogger(Main.class);
+			Logger logger = Logger.getLogger(Logger.class);
 
 			System.out.println("logExceptionHandler() is running!");
 	    	final MethodSignature signature = (MethodSignature) joinPoint.getSignature();
