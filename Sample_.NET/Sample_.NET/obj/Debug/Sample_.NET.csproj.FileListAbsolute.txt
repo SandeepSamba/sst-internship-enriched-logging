@@ -20,8 +20,8 @@ D:\VS\gitRepo\Sample_.NET\Sample_.NET\obj\Debug\Sample_.NET.csproj.Fody.CopyLoca
 D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\MethodDecorator.dll
 D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\NLog.dll
 D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\MethodDecorator.xml
-D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\nlogexampe.exe.config
-D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\nlogexampe.exe
-D:\VS\gitRepo\Sample_.NET\Sample_.NET\obj\Debug\nlogexampe.exe
 D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\Newtonsoft.Json.dll
 D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\Newtonsoft.Json.xml
+D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\nlogexampe.dll.config
+D:\VS\gitRepo\Sample_.NET\Sample_.NET\bin\Debug\nlogexampe.dll
+D:\VS\gitRepo\Sample_.NET\Sample_.NET\obj\Debug\nlogexampe.dll
