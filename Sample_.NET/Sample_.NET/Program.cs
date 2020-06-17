@@ -1,8 +1,6 @@
 ﻿using Newtonsoft.Json;
 using NLog;
-using NLog.Fluent;
 using System;
-using System.CodeDom.Compiler;
 using System.Collections.Generic;
 
 namespace logWriter

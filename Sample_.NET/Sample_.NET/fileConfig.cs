@@ -41,6 +41,7 @@ namespace logWriter
             {
                  interval = Interval;
             }
+
             //Change the archive size to obtain a new file when the size is exceeded
             if (ArchiveSize == 0)
             {
