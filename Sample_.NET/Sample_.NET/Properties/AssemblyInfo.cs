@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("nlogexampe")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("RCALogWriter")]
+[assembly: AssemblyDescription("Utility to log data moving through an application to a file")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("nlogexampe")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Citi")]
+[assembly: AssemblyProduct("RCA")]
+[assembly: AssemblyCopyright("Copyright © Citi  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
