@@ -47,16 +47,6 @@ namespace logWriter
         // method to serialize the log message and append the message to file
         public void AppendToFile(LogMessage message)
         {
-            //Update the file confiuration at ever write
-            FileConfig.UpdateConfig();
-
-            LogManager.ConfigurationReloaded += (sender, e) =>
-            {
-                //Re apply if config reloaded
-                FileConfig.UpdateConfig();
-            };
-
-
             Logger logger = LogManager.GetCurrentClassLogger();
             // option to customize the indentation of the json nessage object
 

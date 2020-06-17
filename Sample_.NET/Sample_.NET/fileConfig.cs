@@ -27,21 +27,48 @@ namespace logWriter
         public static long GB = 1073741824;
 
         //Method to update the file configuration
-        public static void UpdateConfig()
+        public static void UpdateConfig(string Interval, long ArchiveSize, string Path)
         {
+            string interval;
+            long archiveSize;
+            string path;
             //Change this interval to obtain a new file after every interval 
-            var interval = Minutely;
-
+            if (Interval == null)
+            {
+                interval = DateTime.Now.ToString("yyyy-MM-dd");
+            }
+            else
+            {
+                 interval = Interval;
+            }
             //Change the archive size to obtain a new file when the size is exceeded
-            var archiveSize = MB;
+            if (ArchiveSize == 0)
+            {
+                archiveSize = ArchiveSize;
+            }
+            else
+            {
+                archiveSize = ArchiveSize;
+            }
+
+            
+
 
             //Logic to get the target file
             var configuration = LogManager.Configuration;
             var fileTarget = configuration.FindTargetByName<FileTarget>("jsonFile");
 
+            //Change the path to obtain a new file in the path
+            if (Path == null)
+            {
+                path = "${basedir}/Logs/log_" + interval + ".json";
+            }
+            else
+            {
+                path = Path;
+            }
             //logic to obtain a new file after every interval
-            fileTarget.FileName = "${basedir}/Logs/log_"+ interval +".json";
-
+            fileTarget.FileName = path;
             //Logic to obtain a new file after the size is exceeded
             fileTarget.ArchiveAboveSize = archiveSize ;
             fileTarget.ArchiveNumbering = ArchiveNumberingMode.Sequence;
