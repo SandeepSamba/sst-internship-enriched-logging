@@ -66,7 +66,7 @@ namespace logWriter
             }
             else
             {
-                path = Path;
+                path = Path + "/Logs/log_" + interval + ".json";
             }
             //logic to obtain a new file after every interval
             fileTarget.FileName = path;
