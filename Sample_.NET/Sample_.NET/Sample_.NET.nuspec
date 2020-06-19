@@ -8,7 +8,7 @@
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Nuget Package as part of final submission.</releaseNotes>
+    <releaseNotes>Updated file configuration for path.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>RCA LogWriter logging nlog</tags>
     <dependencies>
